@@ -28,9 +28,9 @@
         if (playerSelection == computerSelection) return "draw";
 
         else if ((playerSelection == "rock" && computerSelection == "scissors")
-        || (playerSelection == "scissors" && computerSelection == "paper")
-        || (playerSelection == "paper" && computerSelection == "rock"))
-        return `you win the round! ${playerSelection} beats ${computerSelection}`;
+                || (playerSelection == "scissors" && computerSelection == "paper")
+                || (playerSelection == "paper" && computerSelection == "rock"))
+                return `you win the round! ${playerSelection} beats ${computerSelection}`;
 
         else return `you lose the round! ${computerSelection} beats ${playerSelection}`;
     }
@@ -38,7 +38,7 @@
     function game() {
         let winCount = 0;
         let lossCount = 0;
-        
+
         for (i = 0; i < 5; i++) {
             let roundResult = playRound(prompt(),computerPlay());
             console.log(roundResult);
